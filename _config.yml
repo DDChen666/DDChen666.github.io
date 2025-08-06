@@ -15,12 +15,12 @@ future: true
 # SNS settings
 RSS: false
 # 社交媒體帳號設置
-instagram_username: danielchen_16888        # Instagram 用戶名
-facebook_username: DanielChen16888          # Facebook 頁面名稱
-github_username: DDChen666                  # GitHub 用戶名
-twitter_username: chen79639ddch             # Twitter/X 用戶名
-linkedin_username: hsiu-yuan-c-b10143117    # LinkedIn 個人資料 ID
-threads_username: danielchen_16888          # Threads 用戶名
+instagram_username: danielchen_16888 # Instagram 用戶名
+facebook_username: DanielChen16888 # Facebook 頁面名稱
+github_username: DDChen666 # GitHub 用戶名
+twitter_username: chen79639ddch # Twitter/X 用戶名
+linkedin_username: hsiu-yuan-c-b10143117 # LinkedIn 個人資料 ID
+threads_username: danielchen_16888 # Threads 用戶名
 # 如果不使用某個平台，在前面加 # 註釋掉
 # weibo_username: your_weibo_username
 # zhihu_username: your_zhihu_username
@@ -38,6 +38,9 @@ exclude:
     "package.json",
     "README.md",
     "README.zh.md",
+    "vendor",
+    "Gemfile",
+    "Gemfile.lock",
   ]
 anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
@@ -64,7 +67,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: yuan
+disqus_username: yuan-blog  # 你需要在 disqus.com 註冊這個用戶名
 
 # Netease settings
 netease_comment: false
@@ -74,8 +77,8 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+# ga_track_id: "UA-xxxxxx-xx" # 請替換為你的 Google Analytics ID
+# ga_domain: ddchen666.github.io
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
