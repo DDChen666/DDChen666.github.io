@@ -83,8 +83,7 @@ netease_comment: false
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "永不停止學習,永不停止行動,迎接技術爆炸！願你我都能過上想要的生活 <br> AI 深度原住民 @ Yuan's Blog"
-sidebar-avatar: "/img/avatar-yuan-home.jpg" # use absolute URL, seeing it's used in both `/` and `/about/`
-sidebar-avatar: “DDChen666.github.io/img/avatar-yuan-home.jpg” # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-yuan-home.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
