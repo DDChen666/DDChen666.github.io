@@ -12,6 +12,10 @@
   <meta name="description" content="{{ site.description }}" />
   <meta name="keywords" content="{{ site.keyword }}" />
   <meta name="theme-color" content="{{ site.chrome-tab-theme-color }}" />
+  
+  <!-- 額外的兼容性 Meta 標籤 -->
+  <meta name="msapplication-TileImage" content="{{ site.baseurl }}/img/apple-touch-icon.png" />
+  <meta name="msapplication-TileColor" content="#007bff" />
 
   <!-- Open Graph -->
   <meta
@@ -48,8 +52,18 @@
   <!-- Web App Manifest -->
   <link rel="manifest" href="{{ site.baseurl }}/pwa/manifest.json" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico" />
+  <!-- Favicon - 多格式支持確保兼容性 -->
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/img/favicon-new.ico" />
+  <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon-new.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/img/favicon-16.png" />
+  <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/img/favicon-yuan.svg" />
+  
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/img/apple-touch-icon.png" />
+  
+  <!-- Android Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/img/apple-touch-icon.png" />
 
   <!-- Canonical URL -->
   <link

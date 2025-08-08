@@ -3,11 +3,19 @@
   "short_name": "Yuan's Blog",
   "description": "AI深度原住民的技術博客，分享AI、開發和投資心得",
   "icons": [{
-    "src": "icons/128.png",
+    "src": "../img/favicon-32.png",
+    "sizes": "32x32",
+    "type": "image/png"
+  }, {
+    "src": "../img/apple-touch-icon.png",
+    "sizes": "180x180",
+    "type": "image/png"
+  }, {
+    "src": "icons/128-yuan.png",
     "sizes": "128x128",
     "type": "image/png"
   }, {
-    "src": "icons/512.png",
+    "src": "icons/512-yuan.png",
     "sizes": "512x512",
     "type": "image/png"
   }],
