@@ -17,133 +17,297 @@ nav-order: 2
 
         <!-- 項目列表 -->
         <div class="project-list">
-          <!-- 項目 1 -->
+          <!-- 示範項目 -->
           <div class="project-item">
-            <h3>🤖 AI 聊天助手</h3>
-            <p><strong>技術棧：</strong> Python, OpenAI API, Streamlit</p>
+            <h3>🚀 項目示範模板</h3>
+            <p><strong>技術棧：</strong> 請替換為實際技術棧</p>
             <p>
-              <strong>描述：</strong> 基於 GPT
-              的智能聊天助手，支持多種對話模式和自定義提示詞。
+              <strong>描述：</strong> 這是一個項目展示的示範模板，你可以複製這個格式來添加真實的項目。
             </p>
+            <p><strong>特色功能：</strong></p>
+            <ul>
+              <li>功能特點 1</li>
+              <li>功能特點 2</li>
+              <li>功能特點 3</li>
+            </ul>
             <p>
-              <a
-                href="https://github.com/DDChen666/ai-chat-assistant"
-                target="_blank"
-                class="btn btn-primary"
-              >
+              <a href="#" target="_blank" class="btn btn-primary">
                 <i class="fa fa-github"></i> GitHub
               </a>
               <a href="#" target="_blank" class="btn btn-success">
                 <i class="fa fa-external-link"></i> Demo
               </a>
-            </p>
-            <hr />
-          </div>
-
-          <!-- 項目 2 -->
-          <div class="project-item">
-            <h3>📊 投資分析工具</h3>
-            <p><strong>技術棧：</strong> React, Node.js, Chart.js</p>
-            <p>
-              <strong>描述：</strong>
-              股票和加密貨幣投資分析工具，提供技術指標分析和投資建議。
-            </p>
-            <p>
-              <a
-                href="https://github.com/DDChen666/investment-analyzer"
-                target="_blank"
-                class="btn btn-primary"
-              >
-                <i class="fa fa-github"></i> GitHub
-              </a>
-              <a href="#" target="_blank" class="btn btn-success">
-                <i class="fa fa-external-link"></i> Demo
-              </a>
-            </p>
-            <hr />
-          </div>
-
-          <!-- 項目 3 -->
-          <div class="project-item">
-            <h3>🎨 AI 圖像生成器</h3>
-            <p><strong>技術棧：</strong> Python, Stable Diffusion, FastAPI</p>
-            <p>
-              <strong>描述：</strong> 基於 Stable Diffusion 的 AI
-              圖像生成工具，支持多種風格和參數調整。
-            </p>
-            <p>
-              <a
-                href="https://github.com/DDChen666/ai-image-generator"
-                target="_blank"
-                class="btn btn-primary"
-              >
-                <i class="fa fa-github"></i> GitHub
-              </a>
-              <a href="#" target="_blank" class="btn btn-success">
-                <i class="fa fa-external-link"></i> Demo
-              </a>
-            </p>
-            <hr />
-          </div>
-
-          <!-- 項目 4 -->
-          <div class="project-item">
-            <h3>📱 個人博客系統</h3>
-            <p><strong>技術棧：</strong> Jekyll, GitHub Pages, Bootstrap</p>
-            <p>
-              <strong>描述：</strong> 基於 Jekyll 的個人博客系統，支持 Markdown
-              寫作和自動部署。
-            </p>
-            <p>
-              <a
-                href="https://github.com/DDChen666/DDChen666.github.io"
-                target="_blank"
-                class="btn btn-primary"
-              >
-                <i class="fa fa-github"></i> GitHub
-              </a>
-              <a
-                href="https://ddchen666.github.io"
-                target="_blank"
-                class="btn btn-success"
-              >
-                <i class="fa fa-external-link"></i> Live Site
+              <a href="#" target="_blank" class="btn btn-info">
+                <i class="fa fa-file-text"></i> 文檔
               </a>
             </p>
             <hr />
           </div>
         </div>
 
-        <h3>🚀 即將推出</h3>
-        <ul>
-          <li><strong>AI 代碼審查工具</strong> - 自動化代碼質量檢查和建議</li>
-          <li><strong>學習進度追蹤器</strong> - 個人學習計劃管理系統</li>
-          <li><strong>投資組合管理器</strong> - 多資產投資組合分析工具</li>
-        </ul>
-
-        <p class="text-center">
-          <em>更多項目正在開發中，敬請期待！</em>
-        </p>
+        <div class="empty-state">
+          <h3>🔨 正在建設中</h3>
+          <p>更多精彩項目即將上線，敬請期待！</p>
+          <p><em>如需添加新項目，請聯繫管理員。</em></p>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
+/* 極簡設計風格 - 項目頁面 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.post-container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 40px;
+  margin: 20px 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.post-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+}
+
+.project-item {
+  margin-bottom: 32px;
+  padding: 32px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 123, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #007bff, #0056b3);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-item:hover::before {
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.project-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 123, 255, 0.15);
+  border-color: rgba(0, 123, 255, 0.2);
+}
+
+.project-item h3 {
+  margin: 0 0 16px 0;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1.4em;
+  transition: color 0.3s ease;
+}
+
+.project-item:hover h3 {
+  color: #007bff;
+}
+
+.project-item p {
+  margin-bottom: 12px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.project-item ul {
+  margin: 16px 0;
+  padding-left: 20px;
+}
+
+.project-item li {
+  margin-bottom: 8px;
+  color: #495057;
+  position: relative;
+}
+
+.project-item li::marker {
+  color: #007bff;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  margin: 8px 8px 8px 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.btn-info {
+  background: linear-gradient(135deg, #17a2b8, #138496);
+  color: white;
+  box-shadow: 0 4px 12px rgba(23, 162, 184, 0.3);
+}
+
+.btn-info:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(23, 162, 184, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  margin-top: 40px;
+  border: 2px dashed #dee2e6;
+  transition: all 0.3s ease;
+}
+
+.empty-state:hover {
+  border-color: #007bff;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.empty-state h3 {
+  color: #6c757d;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.empty-state p {
+  color: #868e96;
+  margin-bottom: 8px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .post-container {
+    padding: 24px;
+    margin: 10px 0;
+    border-radius: 12px;
+  }
+  
   .project-item {
-    margin-bottom: 30px;
-    padding: 20px;
-    border-left: 4px solid #337ab7;
-    background-color: #f9f9f9;
+    padding: 24px;
+    margin-bottom: 24px;
   }
-
-  .project-item h3 {
-    margin-top: 0;
-    color: #337ab7;
-  }
-
+  
   .btn {
-    margin-right: 10px;
-    margin-bottom: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
   }
+}
+
+/* 修復側邊欄覆蓋問題 */
+@media (min-width: 992px) {
+  .container .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .col-lg-8 {
+    width: 75%;
+    padding-right: 30px;
+  }
+  
+  .sidebar-container {
+    width: 25%;
+    padding-left: 30px;
+  }
+}
+
+/* 平滑滾動 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 載入動畫 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-item {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.project-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.project-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.empty-state {
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
 </style>

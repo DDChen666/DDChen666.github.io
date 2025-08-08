@@ -153,50 +153,255 @@ nav-order: 4
 </div>
 
 <style>
+/* 極簡設計風格 - 工具頁面 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.post-container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 40px;
+  margin: 20px 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .tools-category {
-    margin-bottom: 40px;
+  margin-bottom: 48px;
+}
+
+.tools-category h3 {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 24px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.tools-category h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 24px;
+  background: linear-gradient(180deg, #007bff, #0056b3);
+  border-radius: 3px;
 }
 
 .tool-item {
-    background-color: #f8f9fa;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border-left: 4px solid #007bff;
-    transition: transform 0.2s ease;
+  background: linear-gradient(135deg, rgba(248, 249, 250, 0.9), rgba(255, 255, 255, 0.9));
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 123, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tool-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #007bff, #0056b3);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tool-item:hover::before {
+  transform: scaleY(1);
+  transform-origin: top;
 }
 
 .tool-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 123, 255, 0.15);
+  border-color: rgba(0, 123, 255, 0.2);
 }
 
 .tool-item h4 {
-    margin-top: 0;
-    margin-bottom: 10px;
+  margin: 0 0 12px 0;
+  font-weight: 600;
+  font-size: 1.2em;
 }
 
 .tool-item h4 a {
-    color: #007bff;
-    text-decoration: none;
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
 }
 
-.tool-item h4 a:hover {
-    text-decoration: underline;
+.tool-item h4 a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tool-item:hover h4 a {
+  color: #007bff;
+}
+
+.tool-item:hover h4 a::after {
+  width: 100%;
 }
 
 .tool-item p {
-    margin-bottom: 10px;
-    color: #6c757d;
+  margin-bottom: 16px;
+  color: #6c757d;
+  line-height: 1.6;
 }
 
 .tool-tag {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 4px 8px;
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.tool-tag::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.tool-item:hover .tool-tag::before {
+  left: 100%;
+}
+
+.tool-tag:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+}
+
+/* 不同類型的標籤顏色 */
+.tool-item:nth-child(4n+1) .tool-tag {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.tool-item:nth-child(4n+2) .tool-tag {
+  background: linear-gradient(135deg, #ffc107, #e0a800);
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.3);
+}
+
+.tool-item:nth-child(4n+3) .tool-tag {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .post-container {
+    padding: 24px;
+    margin: 10px 0;
     border-radius: 12px;
-    font-size: 12px;
-    font-weight: bold;
+  }
+  
+  .tool-item {
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .tools-category {
+    margin-bottom: 32px;
+  }
+}
+
+/* 修復側邊欄覆蓋問題 */
+@media (min-width: 992px) {
+  .container .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .col-lg-8 {
+    width: 75%;
+    padding-right: 30px;
+  }
+  
+  .sidebar-container {
+    width: 25%;
+    padding-left: 30px;
+  }
+}
+
+/* 載入動畫 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tools-category {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.tools-category:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.tools-category:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.tools-category:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.tool-item {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+/* 平滑滾動 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 文字選擇樣式 */
+::selection {
+  background: rgba(0, 123, 255, 0.2);
+  color: #2c3e50;
+}
+
+::-moz-selection {
+  background: rgba(0, 123, 255, 0.2);
+  color: #2c3e50;
 }
 </style>
