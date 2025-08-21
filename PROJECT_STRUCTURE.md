@@ -162,3 +162,16 @@ graph TD
 - **頁面管理**: 直接編輯HTML文件或在`_includes/`中修改組件
 - **樣式管理**: 編輯`less/`中的LESS文件，通過Grunt編譯
 - **配置管理**: 修改`_config.yml`進行網站設置
+
+＃補充：
+官方更新方式（這個專案）
+發佈到線上（GitHub Pages 自動建置）
+cd "/Users/chenxiuyuan/Desktop/CODE/DDChen666_blog/DDChen666.github.io"
+git add -A
+git commit -m "update"
+git push origin master
+
+＃本地預覽
+cd "/Users/chenxiuyuan/Desktop/CODE/DDChen666_blog/DDChen666.github.io"
+bundle exec jekyll serve
+# 然後瀏覽器開 http://localhost:4000/
