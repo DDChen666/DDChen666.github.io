@@ -2,9 +2,9 @@
 layout:     post
 title:      "溫度? Top-K? Top-P? GPT的這些參數一次講明白"
 subtitle:   ""
-date:       2025-08-22 15:37:16
+date:       2025-08-22 15:40:22
 author:     "Yuan"
-header-img: "img/post-bg/header-20250822-153716-536277597_2792050227665019_8266694705175305922_n.jpg"
+header-img: "img/post-bg/header-20250822-154022-ChatGPT_Image_2025-6-15-_--01_03_02.png"
 catalog:    true
 ---
 # 溫度? Top-K ? Top-P ? GPT的這些參數一次講明白 (About LLM : 1)
