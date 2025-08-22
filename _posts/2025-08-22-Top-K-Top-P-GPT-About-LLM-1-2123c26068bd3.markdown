@@ -1,19 +1,15 @@
 ---
 layout:     post
-title:      "---Top-K-Top-P-GPT------------About-LLM-1--2123c260681a809fb1ffc1831546abd3"
+title:      "Top-K-Top-P-GPT"
 subtitle:   ""
-date:       2025-08-22 11:58:00
+date:       2025-08-22 15:59:52
 author:     "Yuan"
-header-img: "img/404-bg.jpg"
+header-img: "img/post-bg-universe.jpg"
 catalog:    true
+tags:
+    - AI
 ---
 # 溫度? Top-K ? Top-P ? GPT的這些參數一次講明白 (About LLM : 1)
-
-標籤: AI, LLM, 學習
-AI 自動填寫: This blog explains key parameters influencing large language models' predictions.
-發佈: 2025年6月15日
-
-![ChatGPT Image 2025年6月15日 上午01_03_02.png](%E6%BA%AB%E5%BA%A6%20Top-K%20Top-P%20GPT%E7%9A%84%E9%80%99%E4%BA%9B%E5%8F%83%E6%95%B8%E4%B8%80%E6%AC%A1%E8%AC%9B%E6%98%8E%E7%99%BD%20(About%20LLM%201)%202123c260681a809fb1ffc1831546abd3/ChatGPT_Image_2025%E5%B9%B46%E6%9C%8815%E6%97%A5_%E4%B8%8A%E5%8D%8801_03_02.png)
 
 > **溫度? Top-K ? Top-P ?  搞懂這些你才是合格的AI大法師~**
 > 
@@ -66,7 +62,6 @@ AI 自動填寫: This blog explains key parameters influencing large language mo
     - **作用**：它會讓機率分佈變得「平坦」。高低機率詞之間的差距會縮小，讓更多冷門的詞也有機會被選中。
     - **效果**：模型的回答會變得**有創意、多樣化，甚至出人意料**。但風險是可能變得不連貫、不合邏輯。適合創意寫作、腦力激盪。
     - **比喻**：一位即興演出的爵士樂手，喜歡嘗試新奇的和弦。
-    
 
 ### **2. Top-K - 「固定候選名單」**
 
@@ -76,7 +71,6 @@ AI 自動填寫: This blog explains key parameters influencing large language mo
 - **問題**：這是一個「一刀切」的方法，有時會出問題。
     - **情境一（分佈很尖銳）**：「The capital of France is ___」。Paris 的機率可能是 99.9%。此時就算你設 K=50，其實也沒什麼意義，因為模型幾乎只會選 Paris。
     - **情境二（分佈很平坦）**：「我想寫一個關於...的故事」。候選詞可能非常多且機率相近。此時如果 K=5，可能會過早地排除掉許多同樣優秀的創意選項。
-    
 
 ### **3. Top-P (又稱 Nucleus Sampling) - 「動態候選名單」**
 
@@ -138,21 +132,8 @@ AI 自動填寫: This blog explains key parameters influencing large language mo
     2. 原始機率：散步 (40%), 野餐 (25%), 玩耍 (15%), 寫程式 (0.001%)。
     3. **高溫開始作用**：它把機率分佈「拍扁」了。現在可能變成：散步 (20%), 野餐 (18%), 玩耍 (16%), ... 甚至連 寫程式 (0.001%) 的機率也被提升到了 寫程式 (1%)。這就引入了「風險」和「新意」。
     4. **現在輪到 Top-P/K 發揮關鍵作用**：你設置了 Top-P = 0.9。篩選器開始工作，它會把 散步 (20%)、野餐 (18%) ... 等等加起來，直到總和超過 90%。**但是，像 寫程式 (1%) 這種雖然被溫度提高了機率、但排名依然很靠後的「胡言亂語」，很可能根本進不了這個 90% 的門檻就被過濾掉了！**
-    
 
 換句話說在這個組合中：
 
 - **高溫負責「拓寬思路」**，讓更多有趣的、不那麼常規的詞彙有機會進入考量範圍。
 - **Top-P 作為「品質守門員」**，它確保思路再寬，最終的選擇也必須來自一個「還算靠譜」的候選池裡，防止模型徹底失控，說出完全不相關的話。
-
-最後，附上gemini整理的四大參數排列組合下，適合那些任務場景:
-
-![image.png](%E6%BA%AB%E5%BA%A6%20Top-K%20Top-P%20GPT%E7%9A%84%E9%80%99%E4%BA%9B%E5%8F%83%E6%95%B8%E4%B8%80%E6%AC%A1%E8%AC%9B%E6%98%8E%E7%99%BD%20(About%20LLM%201)%202123c260681a809fb1ffc1831546abd3/image.png)
-
-如果你有興趣更加深入理解?
-
-我也準備了完整的數學版本~演示了LLM內發生的秘密!
-
-[大模型內的數學奧秘](https://www.notion.so/2123c260681a802d8efedebb36baabb4?pvs=21)
-
-歡迎一起學習!
