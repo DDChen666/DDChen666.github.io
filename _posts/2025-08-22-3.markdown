@@ -1,0 +1,17 @@
+---
+layout:     post
+title:      "3"
+subtitle:   "333"
+date:       2025-08-22 12:22:25
+author:     "Yuan"
+header-img: "img/header-20250822-122318-ChatGPT_Image_2025-6-15-_--01_03_02.png"
+catalog:    true
+tags:
+    - AI
+    - 程式設計
+---
+# 3
+
+333
+
+AI,程式設計
