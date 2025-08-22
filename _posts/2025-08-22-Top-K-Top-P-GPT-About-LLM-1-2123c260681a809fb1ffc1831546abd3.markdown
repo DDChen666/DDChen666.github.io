@@ -2,14 +2,12 @@
 layout:     post
 title:      "Top-K-Top-P-GPT-About-LLM-1-2123c260681a809fb1ffc1831546abd3"
 subtitle:   ""
-date:       2025-08-22 15:05:29
+date:       2025-08-22 15:18:42
 author:     "Yuan"
-header-img: "img/post-bg/header-20250822-150529-ChatGPT_Image_2025-6-15-_--01_03_02.png"
+header-img: "img/post-bg-universe.jpg"
 catalog:    true
 ---
 # 溫度? Top-K ? Top-P ? GPT的這些參數一次講明白 (About LLM : 1)
-
-![ChatGPT Image](img/chatgpt-image.png)%202123c260681a809fb1ffc1831546abd3/ChatGPT_Image_2025%E5%B9%B46%E6%9C%8815%E6%97%A5_%E4%B8%8A%E5%8D%8801_03_02.png)
 
 > **溫度? Top-K ? Top-P ?  搞懂這些你才是合格的AI大法師~**
 > 
@@ -138,14 +136,3 @@ catalog:    true
 - **高溫負責「拓寬思路」**，讓更多有趣的、不那麼常規的詞彙有機會進入考量範圍。
 - **Top-P 作為「品質守門員」**，它確保思路再寬，最終的選擇也必須來自一個「還算靠譜」的候選池裡，防止模型徹底失控，說出完全不相關的話。
 
-最後，附上gemini整理的四大參數排列組合下，適合那些任務場景:
-
-![image.png](img/image.png.png)%202123c260681a809fb1ffc1831546abd3/image.png)
-
-如果你有興趣更加深入理解?
-
-我也準備了完整的數學版本~演示了LLM內發生的秘密!
-
-[大模型內的數學奧秘](https://www.notion.so/2123c260681a802d8efedebb36baabb4?pvs=21)
-
-歡迎一起學習!
