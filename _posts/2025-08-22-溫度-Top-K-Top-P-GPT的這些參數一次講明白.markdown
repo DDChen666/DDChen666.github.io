@@ -2,7 +2,7 @@
 layout:     post
 title:      "溫度? Top-K? Top-P? GPT的這些參數一次講明白"
 subtitle:   ""
-date:       2025-08-22 15:27:33
+date:       2025-08-22 15:33:16
 author:     "Yuan"
 header-img: "img/post-bg-universe.jpg"
 catalog:    true
