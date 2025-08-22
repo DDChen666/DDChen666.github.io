@@ -2,7 +2,7 @@
 layout:     post
 title:      "Top-K-Top-P-GPT-About-LLM-1-2123c260681a809fb1ffc1831546abd3"
 subtitle:   ""
-date:       2025-08-22 14:38:49
+date:       2025-08-22 14:55:37
 author:     "Yuan"
 header-img: "img/404-bg.jpg"
 catalog:    true
