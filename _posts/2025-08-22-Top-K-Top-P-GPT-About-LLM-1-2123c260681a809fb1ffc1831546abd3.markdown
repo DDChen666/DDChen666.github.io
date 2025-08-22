@@ -2,14 +2,14 @@
 layout:     post
 title:      "Top-K-Top-P-GPT-About-LLM-1-2123c260681a809fb1ffc1831546abd3"
 subtitle:   ""
-date:       2025-08-22 14:55:37
+date:       2025-08-22 15:05:29
 author:     "Yuan"
-header-img: "img/404-bg.jpg"
+header-img: "img/post-bg/header-20250822-150529-ChatGPT_Image_2025-6-15-_--01_03_02.png"
 catalog:    true
 ---
 # 溫度? Top-K ? Top-P ? GPT的這些參數一次講明白 (About LLM : 1)
 
-![ChatGPT Image 2025年6月15日 上午01_03_02.png](%E6%BA%AB%E5%BA%A6%20Top-K%20Top-P%20GPT%E7%9A%84%E9%80%99%E4%BA%9B%E5%8F%83%E6%95%B8%E4%B8%80%E6%AC%A1%E8%AC%9B%E6%98%8E%E7%99%BD%20(About%20LLM%201)%202123c260681a809fb1ffc1831546abd3/ChatGPT_Image_2025%E5%B9%B46%E6%9C%8815%E6%97%A5_%E4%B8%8A%E5%8D%8801_03_02.png)
+![ChatGPT Image](img/chatgpt-image.png)%202123c260681a809fb1ffc1831546abd3/ChatGPT_Image_2025%E5%B9%B46%E6%9C%8815%E6%97%A5_%E4%B8%8A%E5%8D%8801_03_02.png)
 
 > **溫度? Top-K ? Top-P ?  搞懂這些你才是合格的AI大法師~**
 > 
@@ -140,7 +140,7 @@ catalog:    true
 
 最後，附上gemini整理的四大參數排列組合下，適合那些任務場景:
 
-![image.png](%E6%BA%AB%E5%BA%A6%20Top-K%20Top-P%20GPT%E7%9A%84%E9%80%99%E4%BA%9B%E5%8F%83%E6%95%B8%E4%B8%80%E6%AC%A1%E8%AC%9B%E6%98%8E%E7%99%BD%20(About%20LLM%201)%202123c260681a809fb1ffc1831546abd3/image.png)
+![image.png](img/image.png.png)%202123c260681a809fb1ffc1831546abd3/image.png)
 
 如果你有興趣更加深入理解?
 
