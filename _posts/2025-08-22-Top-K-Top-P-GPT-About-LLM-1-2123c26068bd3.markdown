@@ -1,13 +1,11 @@
 ---
 layout:     post
-title:      "123c26068bd3"
-subtitle:   ""
-date:       2025-08-22 16:04:32
+title:      "溫度 Top-K Top-P GPT的這些參數一次講明白"
+subtitle:   "大模型基本功！"
+date:       2025-08-22 16:59:19
 author:     "Yuan"
-header-img: "img/post-bg-universe.jpg"
+header-img: "img/post-bg/header-20250822-165919-ChatGPT_Image_2025-6-15-_--01_03_02.png"
 catalog:    true
-tags:
-    - AI
 ---
 # 溫度? Top-K ? Top-P ? GPT的這些參數一次講明白 (About LLM : 1)
 
@@ -137,3 +135,4 @@ tags:
 
 - **高溫負責「拓寬思路」**，讓更多有趣的、不那麼常規的詞彙有機會進入考量範圍。
 - **Top-P 作為「品質守門員」**，它確保思路再寬，最終的選擇也必須來自一個「還算靠譜」的候選池裡，防止模型徹底失控，說出完全不相關的話。
+
